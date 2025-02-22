@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <title>Projects - Christian Dipert</title>
+        <style>
+            body {
+                font-family: monospace;
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+            .header a {
+                display: inline-block;
+                background-color: #bf5700;
+                padding: 20px;
+                border: 2px solid #fff;
+                box-shadow: 5px 5px #333;
+                font-size: 2em;
+                font-weight: bold;
+                color: #fff; /* Ensures text is white */
+                text-decoration: none; /* Removes underlining */
+            }
+            .header a:hover {
+                background-color: #ff8a00; /* Darkens the button on hover */
+            }
+            .blinking-cursor {
+                color: #fff;
+                animation: blink 1s steps(2, start) infinite;
+            }
+            @keyframes blink {
+                to {
+                    visibility: hidden;
+                }
+            }
+            .section {
+                margin: 40px 0;
+            }
+            .project-item {
+                background-color: #2b2b2b;
+                margin: 20px auto;
+                padding: 20px;
+                border: 2px solid #bf5700;
+                max-width: 80%;
+                text-align: left;
+            }
+            a {
+                color: #bf5700;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: #ff8a00;
+            }
+            img.project-image {
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+            }
+            footer {
+                margin-top: 40px;
+                font-size: 0.9em;
+                color: #bf5700;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="index.html"></a>
+                christian@projects&gt;<span class="blinking-cursor">_</span>
+            </a>
+        </div>
+        <div class="section">
+
+            <!-- Project 1 -->
+            <div class="project-item">
+                <h3>Project Name 1</h3>
+                <a href="project-link-1.com">
+                    <img
+                        src="project-image-1.jpg"
+                        alt="Project Image 1"
+                        class="project-image"
+                    />
+                </a>
+                <p>Description of what Project 1 is about.</p>
+                <a href="project-link-1.com">Read more...</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-item">
+                <h3>Project Name 2</h3>
+                <a href="project-link-2.com">
+                    <img
+                        src="project-image-2.jpg"
+                        alt="Project Image 2"
+                        class="project-image"
+                    />
+                </a>
+                <p>Description of what Project 2 is about.</p>
+                <a href="project-link-2.com">Read more...</a>
+            </div>
+
+            <!--  more projects as needed -->
+
+        </div>
+        <footer>&copy; 2025 Christian Dipert</footer>
+    </body>
+</html>
