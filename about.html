@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <title>Christian Dipert</title>
+        <title>Christian Dipert - About</title>
         <style>
             body {
                 font-family: monospace;
@@ -13,7 +13,7 @@
                 text-align: center;
                 padding: 20px;
             }
-            .header {
+            .header a {
                 display: inline-block;
                 background-color: #bf5700;
                 padding: 20px;
@@ -21,6 +21,11 @@
                 box-shadow: 5px 5px #333;
                 font-size: 2em;
                 font-weight: bold;
+                color: #fff;
+                text-decoration: none;
+            }
+            .header a:hover {
+                background-color: #ff8a00;
             }
             .blinking-cursor {
                 color: #fff;
@@ -31,9 +36,21 @@
                     visibility: hidden;
                 }
             }
-            .section,
-            .about {
+            .section {
                 margin: 40px 0;
+            }
+            .box {
+                background-color: #2b2b2b;
+                padding: 20px;
+                border: 2px solid #bf5700;
+                margin: 20px auto;
+                max-width: 80%;
+                text-align: left;
+            }
+            .company-logo {
+                width: 100px;
+                height: auto;
+                margin-bottom: 10px;
             }
             a {
                 color: #bf5700;
@@ -43,18 +60,6 @@
                 text-decoration: underline;
                 color: #ff8a00;
             }
-            .box,
-            .about {
-                display: inline-block;
-                background-color: #2b2b2b;
-                padding: 20px;
-                border: 2px solid #bf5700;
-            }
-            svg.ut-logo,
-            img.ut-logo {
-                height: 50px;
-                margin-bottom: 10px;
-            }
             footer {
                 margin-top: 40px;
                 font-size: 0.9em;
@@ -63,11 +68,73 @@
         </style>
     </head>
     <body>
-        <div class="about">
-            <img src="hookem.png" alt="UT Logo" class="ut-logo" />
-            <h3>About Me</h3>
-            <p>tbd lololgowkgaoijfaiwmai.</p>
+        <div class="header">
+            <a href="index.html">
+                christian@about&gt;<span class="blinking-cursor">_</span>
+            </a>
         </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <div class="box">
+                <img
+                    src="datadog_logo.png"
+                    alt="Datadog Logo"
+                    class="company-logo"
+                />
+                <h3>Software Engineering Intern - JP Morgan</h3>
+                <p>Working here this summer!</p>
+            </div>
+            <div class="box">
+                <img
+                    src="robinhood_logo.png"
+                    alt="Robinhood Logo"
+                    class="company-logo"
+                />
+                <h3>Software Engineering Intern - Datadog</h3>
+                <p>Currently working here!</p>
+            </div>
+            <div class="box">
+                <img
+                    src="robinhood_logo.png"
+                    alt="Robinhood Logo"
+                    class="company-logo"
+                />
+                <h3>Software Engineering Intern - TIAA</h3>
+                <p>Worked here!</p>
+            </div>
+            <div class="box">
+                <img
+                    src="robinhood_logo.png"
+                    alt="Robinhood Logo"
+                    class="company-logo"
+                />
+                <h3>Software Engineering Intern - Lockheed Martin</h3>
+                <p>Worked here!</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Interests & Hobbies</h2>
+            <div class="box">
+                <p>Fill this in eventually</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Links & Projects</h2>
+            <div class="box">
+                <ul>
+                    <li>
+                        <a href="https://github.com/christiandipert"
+                            >GitHub Profile</a
+                        >
+                    </li>
+                    <li><a href="/projects.html">Project Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+
         <footer>&copy; 2025 Christian Dipert</footer>
     </body>
 </html>

@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <title>Projects - Christian Dipert</title>
+        <title>Christian Dipert</title>
         <style>
             body {
                 font-family: monospace;
@@ -21,11 +21,11 @@
                 box-shadow: 5px 5px #333;
                 font-size: 2em;
                 font-weight: bold;
-                color: #fff; /* Ensures text is white */
-                text-decoration: none; /* Removes underlining */
+                color: #fff;
+                text-decoration: none;
             }
             .header a:hover {
-                background-color: #ff8a00; /* Darkens the button on hover */
+                background-color: #ff8a00;
             }
             .blinking-cursor {
                 color: #fff;
@@ -39,11 +39,11 @@
             .section {
                 margin: 40px 0;
             }
-            .project-item {
+            .box {
                 background-color: #2b2b2b;
-                margin: 20px auto;
                 padding: 20px;
                 border: 2px solid #bf5700;
+                margin: 20px auto;
                 max-width: 80%;
                 text-align: left;
             }
@@ -60,6 +60,12 @@
                 height: auto;
                 margin-top: 10px;
             }
+            .read-more {
+                display: inline-block;
+                margin-top: 10px;
+                color: #bf5700;
+                text-decoration: underline;
+            }
             footer {
                 margin-top: 40px;
                 font-size: 0.9em;
@@ -69,43 +75,50 @@
     </head>
     <body>
         <div class="header">
-            <a href="index.html"></a>
+            <a href="index.html">
                 christian@projects&gt;<span class="blinking-cursor">_</span>
             </a>
         </div>
-        <div class="section">
 
-            <!-- Project 1 -->
-            <div class="project-item">
-                <h3>Project Name 1</h3>
-                <a href="project-link-1.com">
-                    <img
-                        src="project-image-1.jpg"
-                        alt="Project Image 1"
-                        class="project-image"
-                    />
-                </a>
-                <p>Description of what Project 1 is about.</p>
-                <a href="project-link-1.com">Read more...</a>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-item">
-                <h3>Project Name 2</h3>
-                <a href="project-link-2.com">
-                    <img
-                        src="project-image-2.jpg"
-                        alt="Project Image 2"
-                        class="project-image"
-                    />
-                </a>
-                <p>Description of what Project 2 is about.</p>
-                <a href="project-link-2.com">Read more...</a>
-            </div>
-
-            <!--  more projects as needed -->
-
+        <div class="box">
+            <h3>Project 1</h3>
+            <p>Description of project 1 goes here.</p>
+            <img
+                src="project1.jpg"
+                alt="Project 1 Image"
+                class="project-image"
+            />
+            <a href="https://github.com/yourusername/project1" class="read-more"
+                >Read more...</a
+            >
         </div>
+
+        <div class="box">
+            <h3>Project 2</h3>
+            <p>Description of project 2 goes here.</p>
+            <img
+                src="project2.jpg"
+                alt="Project 2 Image"
+                class="project-image"
+            />
+            <a href="https://github.com/yourusername/project2" class="read-more"
+                >Read more...</a
+            >
+        </div>
+
+        <div class="box">
+            <h3>Project 3</h3>
+            <p>Description of project 3 goes here.</p>
+            <img
+                src="project3.jpg"
+                alt="Project 3 Image"
+                class="project-image"
+            />
+            <a href="https://github.com/yourusername/project3" class="read-more"
+                >Read more...</a
+            >
+        </div>
+
         <footer>&copy; 2025 Christian Dipert</footer>
     </body>
 </html>
