@@ -3,25 +3,27 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>christian dipert</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <title>Christian Dipert</title>
         <style>
             body {
                 font-family: monospace;
-                background-color: #fff;
+                background-color: #000;
+                color: #fff;
                 text-align: center;
                 padding: 20px;
             }
             .header {
                 display: inline-block;
-                background-color: #f4a6b7;
+                background-color: #bf5700;
                 padding: 20px;
-                border: 2px solid black;
-                box-shadow: 5px 5px #85c5e0;
+                border: 2px solid #fff;
+                box-shadow: 5px 5px #333;
                 font-size: 2em;
                 font-weight: bold;
             }
             .blinking-cursor {
-                display: inline;
+                color: #fff;
                 animation: blink 1s steps(2, start) infinite;
             }
             @keyframes blink {
@@ -29,25 +31,34 @@
                     visibility: hidden;
                 }
             }
-            .section {
+            .section,
+            .about {
                 margin: 40px 0;
             }
             a {
-                color: #0066cc;
+                color: #bf5700;
                 text-decoration: none;
             }
             a:hover {
                 text-decoration: underline;
+                color: #ff8a00;
             }
-            .box {
+            .box,
+            .about {
                 display: inline-block;
-                background-color: #f7d6f5;
+                background-color: #2b2b2b;
                 padding: 20px;
-                border: 2px solid black;
+                border: 2px solid #bf5700;
+            }
+            svg.ut-logo,
+            img.ut-logo {
+                height: 50px;
+                margin-bottom: 10px;
             }
             footer {
                 margin-top: 40px;
                 font-size: 0.9em;
+                color: #bf5700;
             }
         </style>
     </head>
@@ -55,79 +66,27 @@
         <div class="header">
             christian@web&gt;<span class="blinking-cursor">_</span>
         </div>
-
         <div class="section">
-            <h3>&gt; professional</h3>
-            <p><a href="#">blog (coming soon)</a></p>
-            <p><a href="#">projects (coming soon)</a></p>
-            <p><a href="#">what im working on rn 🤔</a></p>
+            <h3>&gt; Professional</h3>
+            <p><a href="about.html">About me</a></p>
+            <p><a href="#">Blog (coming soon)</a></p>
+            <p><a href="projects.html">Projects (coming soon)</a></p>
+            <p><a href="#">What I'm working on rn 🤔</a></p>
         </div>
-
         <div class="box">
-            <h3>contact</h3>
+            <h3>Contact</h3>
             <p>
                 email ->
-                <a href="christiandipert@utexas.edu"
+                <a href="mailto:christiandipert@utexas.edu"
                     >christiandipert@utexas.edu</a
                 >
             </p>
+            <p>
+                linkedin ->
+                <a href="linkedin.com/in/christiandipert">christiandipert</a>
+            </p>
             <p>timezone -> US/Eastern</p>
         </div>
-
-        <footer>&copy; 2025 My Name</footer>
+        <footer>&copy; 2025 Christian Dipert</footer>
     </body>
-</html>
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Portfolio</title>
-        <style>
-            body {
-                font-family: monospace;
-                background-color: #fff;
-                text-align: center;
-                padding: 20px;
-            }
-            .header {
-                display: inline-block;
-                background-color: #f4a6b7;
-                padding: 20px;
-                border: 2px solid black;
-                box-shadow: 5px 5px #85c5e0;
-                font-size: 2em;
-                font-weight: bold;
-            }
-            .blinking-cursor {
-                display: inline;
-                animation: blink 1s steps(2, start) infinite;
-            }
-            @keyframes blink {
-                to {
-                    visibility: hidden;
-                }
-            }
-            .section {
-                margin: 40px 0;
-            }
-            a {
-                color: #0066cc;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-            .box {
-                display: inline-block;
-                background-color: #f7d6f5;
-                padding: 20px;
-                border: 2px solid black;
-            }
-            footer {
-                margin-top: 40px;
-                font-size: 0.9em;
-            }
-        </style>
-    </head>
 </html>
