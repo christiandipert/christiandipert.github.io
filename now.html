@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="static/favicon.ico" type="image/x-icon" />
+        <title>Christian Dipert</title>
+        <style>
+            body {
+                font-family: monospace;
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+            .header a {
+                display: inline-block;
+                background-color: #bf5700;
+                padding: 20px;
+                border: 2px solid #fff;
+                box-shadow: 5px 5px #333;
+                font-size: 2em;
+                font-weight: bold;
+                color: #fff;
+                text-decoration: none;
+            }
+            .header a:hover {
+                background-color: #ff8a00;
+            }
+            .blinking-cursor {
+                color: #fff;
+                animation: blink 1s steps(2, start) infinite;
+            }
+            @keyframes blink {
+                to {
+                    visibility: hidden;
+                }
+            }
+            .box {
+                background-color: #2b2b2b;
+                padding: 20px;
+                border: 2px solid #bf5700;
+                margin: 20px auto;
+                max-width: 80%;
+                text-align: left;
+            }
+            a {
+                color: #bf5700;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: #ff8a00;
+            }
+            img.project-image {
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+            }
+            footer {
+                margin-top: 40px;
+                font-size: 0.9em;
+                color: #bf5700;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="index.html">
+                christian@currently&gt;<span class="blinking-cursor">_</span>
+            </a>
+        </div>
+
+        <div class="box">
+            <h2>scoreify</h2>
+            <p><i>Started March 2025</i></p>
+            <p style="font-size: 1.2em; font-weight: bold">
+                A fast, modern audio-matching algorithm for instrumental pieces.
+            </p>
+            <p>
+                As a classically-trained violinist, I've consistently ran into
+                the problem of hearing pieces in public or around Spotify, and
+                not knowing what they are. I can usually remember a significant
+                melody or key/tonality (search up relative pitch, this is
+                fascinating!), but I can't remember the name of the piece. This
+                is where scoreify comes in!
+            </p>
+            <p>
+                Scoreify is a command line application (hopefully soon to
+                incorporate a GUI) that takes in a live audio recording or
+                violin track being played by me, and attempts to identify a
+                piece based on what I'm playing. It uses a combination of
+                machine learning and music theory to identify the key, tonality,
+                and tempo variance/range in order to create a running score of
+                what's being played, and then compares that to a database of
+                known pieces to identify the piece. The goal is to be able to
+                take 15-20 seconds of violin playing, and narrow it down to
+                potentially the violin 1 part of a famous orchestral piece, or a
+                solo violin piece, which would be more trivial.
+            </p>
+            <p>
+                Shazam is a great reference for this project, and their original
+                audio-matching algorithm thesis is something I hope to
+                incorporate into the project to get a baseline matching
+                algorithm going. Shazam utilizes a fast fourier-transform (FFT)
+                to convert audio into a frequency domain, and then uses a hash
+                table to match the frequency domain to a database of known
+                songs. I hope to use a similar approach, but with a more
+                music-theory based approach to narrow down the search space.
+            </p>
+            <p>
+                For now, the language of choice is Rust, but I'm looking to
+                potentially change to C++ due to the low amounts of audio
+                libraries in Rust. I'm also looking to incorporate a GUI, and
+                potentially a web-based application to make it more accessible.
+            </p>
+            <a
+                target="_blank"
+                href="https://github.com/christiandipert/scoreify"
+                >Learn more &raquo;</a
+            >
+        </div>
+
+        <div class="box">
+            <h2>Datadog Static Analyzer</h2>
+            <p><i>Started on January 2025</i></p>
+            <img
+                src="static/analyzer.jpeg"
+                alt="Static Analyzer"
+                class="project-image"
+            />
+            <p>
+                Datadog's Code Security product utilizes a low-level development
+                stack to effectively parse and analyze code for security
+                vulnerabilities. The static analyzer is a key component of this
+                product, and is responsible for parsing code, identifying
+                vulnerabilities, and providing remediation advice to developers.
+            </p>
+            <p>
+                The static analyzer is written in Rust, and is designed to be
+                fast, efficient, and scalable. It is also designed to be highly
+                configurable, allowing users to customize the analysis process
+                to suit their specific needs.
+            </p>
+            <p>
+                As an intern on this project, I am contributing to this project
+                as part of my day-to-day responsibilities of being a software
+                engineering intern at Datadog.
+            </p>
+            <a
+                target="_blank"
+                href="https://www.datadoghq.com/product/code-security/"
+                >Learn more &raquo;</a
+            >
+        </div>
+
+        <footer>&copy; 2025 Christian Dipert</footer>
+    </body>
+</html>
